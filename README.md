@@ -1,14 +1,25 @@
-# s3-file-uploader
+# s3-bucket-file-uploader
+Uploading files to `AWS` using `S3 bucket` and connecting an `AWS` created `DB` using `mySql`
+
+### Used services
+- deployment: `Elastic Beanstalk`
+- storage: `s3`
+- database: `RDS` (`mySql`)
+- CD: `codePipeline`
+
 
 ## step one
 update the env with the variables
+check `en-sample.env` file for env variables and what to provide.
 
 ## step two
+install packages and start the server
+```
 npm install
+```
+```
+npm run start
+```
 
-## step three
-npm start
 
-## actions
-Upload an image: route is {host-ip-address}:8090/api/v1/upload
-Retrieve all uploaded files {host-ip-address}:8090/api/v1/files
+

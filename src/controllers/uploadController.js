@@ -13,7 +13,7 @@ class uploadController {
      	return res.send('Please upload a file')
     try {
       //Upload file to S3
-	const newObj = await File.create({fileName: req.file.originalname, fileLink: req.file.location});
+	    const newObj = await File.create({fileName: req.file.originalname, fileLink: req.file.originalname});
 	
       //Insert file name and link in DB
 		
